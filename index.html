@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Parfum</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+   
+<header class="header">
+    <img src="img/logo.png" alt="Logo Leora" class="logo">
+    <div>
+        <h1>LEORA FRAGRANCE</h1>
+        <p>Discover Your Signature Scent</p>
+    </div>
+</header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#produk">Produk</a>
+        <a href="#tentang">Tentang</a>
+    </nav>
+
+    <section class="judul" id="home">
+        <h2>Katalog Parfum</h2>
+        <p>Temukan aroma favoritmu di sini.</p>
+    </section>
+
+    <section class="produk" id="produk">
+
+        <div class="card">
+            <img src="img/Chanel-Coco-Mademoiselle.jpg" alt="Foto Chanel Coco Mademoiselle">
+            <h3>Chanel Coco Mademoiselle</h3>
+            <p>Negara: Prancis 🇫🇷</p>
+            <p class="harga">Rp3.200.000</p>
+            <button onclick="lihatDetail(0)">Lihat Detail</button>
+        </div>
+
+        <div class="card">
+            <img src="img/Dior-Sauvage-Elixir.jpg" alt="Foto Dior Sauvage Elixir">
+            <h3>Dior Sauvage Elixir</h3>
+            <p>Negara: Prancis 🇫🇷</p>
+            <p class="harga">Rp4.500.000</p>
+            <button onclick="lihatDetail(1)">Lihat Detail</button>
+        </div>
+
+        <div class="card">
+            <img src="img/Tom-Ford-Oud-Wood.jpg" alt="Foto Tom Ford Oud Wood">
+            <h3>Tom Ford Oud Wood</h3>
+            <p>Negara: Amerika Serikat 🇺🇸</p>
+            <p class="harga">Rp5.500.000</p>
+            <button onclick="lihatDetail(2)">Lihat Detail</button>
+        </div>
+
+        <div class="card">
+            <img src="img/Creed-Aventus.jpg" alt="Foto Creed Aventus">
+            <h3>Creed Aventus</h3>
+            <p>Negara: Prancis 🇫🇷</p>
+            <p class="harga">Rp8.000.000</p>
+            <button onclick="lihatDetail(3)">Lihat Detail</button>
+        </div>
+
+        <div class="card">
+            <img src="img/Louis-Vuitton-Imagination.jpg" alt="Foto Louis Vuitton Imagination">
+            <h3>Louis Vuitton Imagination</h3>
+            <p>Negara: Prancis 🇫🇷</p>
+            <p class="harga">Rp6.500.000</p>
+            <button onclick="lihatDetail(4)">Lihat Detail</button>
+        </div>
+
+        <div class="card">
+            <img src="img/Parfums-de-Marly-Delina-Exclusif.jpg" alt="Foto Delina Exclusif">
+            <h3>Parfums de Marly Delina Exclusif</h3>
+            <p>Negara: Prancis 🇫🇷</p>
+            <p class="harga">Rp5.800.000</p>
+            <button onclick="lihatDetail(5)">Lihat Detail</button>
+        </div>
+
+        <div class="card">
+            <img src="img/Maison-Francis-Kurkdjian-Baccarat-Rouge-540.jpg" alt="Foto Baccarat Rouge 540">
+            <h3>Maison Francis Kurkdjian Baccarat Rouge 540</h3>
+            <p>Negara: Prancis 🇫🇷</p>
+            <p class="harga">Rp6.000.000</p>
+            <button onclick="lihatDetail(6)">Lihat Detail</button>
+        </div>
+
+        <div class="card">
+            <img src="img/Kilian-Angels'-Share.jpg" alt="Foto Kilian Angels Share">
+            <h3>Kilian Angels' Share</h3>
+            <p>Negara: Prancis 🇫🇷</p>
+            <p class="harga">Rp5.500.000</p>
+            <button onclick="lihatDetail(7)">Lihat Detail</button>
+        </div>
+
+        <div class="card">
+            <img src="img/Jo-Malone-Myrrh-&-Tonka-Cologne-Intense.jpg" alt="Foto Jo Malone Myrrh Tonka">
+            <h3>Jo Malone Myrrh & Tonka Cologne Intense</h3>
+            <p>Negara: Inggris 🇬🇧</p>
+            <p class="harga">Rp3.500.000</p>
+            <button onclick="lihatDetail(8)">Lihat Detail</button>
+        </div>
+
+    </section>
+
+    <section class="tentang" id="tentang">
+        <h2>Tentang Kami</h2>
+        <p>
+            Website ini menyediakan berbagai parfum
+            dari merek terkenal dengan aroma yang beragam.
+        </p>
+    </section>
+
+<div class="sosial-media">
+
+    <a href="https://www.instagram.com/username" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://www.tiktok.com/@username" target="_blank">
+        <i class="fab fa-tiktok"></i>
+    </a>
+
+    <a href="https://github.com/dewirplkanesa-prog" target="_blank">
+        <i class="fab fa-github"></i>
+    </a>
+
+</div>
+
+    <footer>
+        <p>&copy; 2026 Parfum Dewi.</p>
+    </footer>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close" onclick="tutupDetail()">&times;</span>
+            <h2 id="nama"></h2>
+            <p id="negara"></p>
+            <h3 id="harga"></h3>
+            <p id="detail"></p>
+            <button onclick="tutupDetail()">Tutup</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
